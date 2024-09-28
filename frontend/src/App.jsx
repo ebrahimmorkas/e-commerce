@@ -10,6 +10,7 @@ import Orders from './pages/Orders'
 import Product from './pages/Product'
 import Login from './pages/Login'
 import NavbarLayout from './layouts/NavbarLayout'
+import Products from './pages/Products'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/orders' element={<Orders />} />
           <Route path='/product:productId' element={<Product />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/products' element={<Products />} />
         </Route>
       </Routes>
     </BrowserRouter>

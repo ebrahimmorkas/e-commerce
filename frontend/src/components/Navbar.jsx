@@ -46,9 +46,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ease-in-out ${
-        isScrolled ? 'bg-blueGray-50 bg-opacity-90 backdrop-blur-lg shadow-lg' : 'bg-transparent'
-      }`}
+      className={`sticky top-0 w-full z-50 transition-all duration-300 ease-in-out ${
+        isScrolled ? 'bg-blueGray-50 bg-opacity-90 backdrop-blur-lg shadow-lg' : 'bg-blueGray-50'
+      }`} // Ensure the background color matches Hero
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
@@ -88,9 +88,9 @@ const Navbar = () => {
               {isDropdownOpen && (
                 <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded shadow-lg">
                   <Link to='/login'>
-                  <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setIsDropdownOpen(false)}> 
-                    Login
-                  </button>
+                    <button className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setIsDropdownOpen(false)}> 
+                      Login
+                    </button>
                   </Link>
                   <Link to='/signup' className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100" onClick={() => setIsDropdownOpen(false)}>
                     Sign Up
