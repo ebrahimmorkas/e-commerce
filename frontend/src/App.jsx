@@ -24,7 +24,7 @@ function App() {
           <Route path='/collection' element={<Collection />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/product:productId' element={<Product />} />
-          <Route path='/login ' element={<Login />} />
+          <Route path='/login' element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
