@@ -54,7 +54,9 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* LOGO */}
           <div className="flex-shrink-0">
+            <Link to='/'>
             <h1 className="text-2xl font-bold">E-Shop</h1>
+            </Link>
           </div>
 
           {/* DESKTOP NAV LINKS */}
@@ -62,7 +64,7 @@ const Navbar = () => {
             <NavLink exact to="/" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}>
               Home
             </NavLink>
-            <NavLink to="/shop" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}>
+            <NavLink to="/products" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}>
               Shop
             </NavLink>
             <NavLink to="/about" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)}>
