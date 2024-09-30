@@ -11,11 +11,13 @@ import Product from './pages/Product'
 import Login from './pages/Login'
 import NavbarLayout from './layouts/NavbarLayout'
 import Products from './pages/Products'
+import ShopContextProvider from './context/ShopContextProvider'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <ShopContextProvider>
       <Routes>
         <Route path='/' element={<NavbarLayout />}>
           <Route path='/' element={<Home />} />
@@ -29,6 +31,7 @@ function App() {
           <Route path='/products' element={<Products />} />
         </Route>
       </Routes>
+    </ShopContextProvider>
     </BrowserRouter>
   )
 }
