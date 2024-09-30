@@ -18,7 +18,7 @@ const ShopContextProvider = (props) => {
         // })
         // setFilters([category])
         if(filters.includes(category)) {
-            // The category has already been checked and useris unchecking it so remove it from filters
+            // The category has already been checked and user is unchecking it so remove it from filters
             setFilters((prevFilters) => {
                 return prevFilters.filter((item) => item!==category)
             })

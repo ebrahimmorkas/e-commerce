@@ -4,21 +4,21 @@ import ProductFilterLeftSection from '../components/ProductFilterLeftSection'
 import ShopContext from '../context/ShopContext'
 
 const Products = () => {
-  const [products, setProducts] = useState()
+  const [products, setProducts] = useState([])
   useEffect(() => {
     const fetchProducts = async () => {
       try {
       const res = await fetch('http://localhost:3000/products')
       const data = await res.json()
       setProducts(data)
-      console.log(data)
-      console.log(typeof(data))
       } catch(e) {
         console.log(`Error Fetching data ${e}`)
+      } finally {
       }
     }
     fetchProducts()
   }, [])
+
 
   // const test = useContext(ShopContext)
   // console.log(`Blah blah balh balh ${test}`)
@@ -31,17 +31,18 @@ const Products = () => {
       </div>
       <div className="flex-1 overflow-y-auto p-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
-      <div><ProductCard /></div>
+          {products ? 
+            products.map((product, key) => (
+            <ProductCard 
+            key={product.id} 
+            name={product.name}
+            description={product.description}
+            price={product.price}
+            image={product.image}
+            category={product.category}
+            size={product.size}
+            date_of_publish={product.date_of_publish} />
+          )): (false)}
       </div>
       </div>
     </div>
