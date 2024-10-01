@@ -6,7 +6,7 @@ const ProductFilterLeftSection = () => {
   const categoryFilter = useContext(ShopContext)
   // console.log(`Hiii from filters ${categoryFilter.filters}`)
   // categoryFilter.updateFilters(5)
-    const categories = ['Men', 'Women', 'Kids']
+    const categories = ['men', 'women', 'kids']
     return (
         <div className="p-6 bg-white rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-4">Filters</h2>

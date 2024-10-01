@@ -6,10 +6,7 @@
             "description": "Experience high-quality sound with wireless freedom. Perfect for music lovers on the go.",
             "price": 59.99,
             "image": "https://via.placeholder.com/150x150.png?text=Headphones",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "men",
             "sub_category": "Electronics",
             "size": [
                 "Small",
@@ -24,11 +21,7 @@
             "description": "Ultra HD 4K Smart TV with a sleek design and built-in streaming apps.",
             "price": 499.99,
             "image": "https://via.placeholder.com/150x150.png?text=Smart+TV",
-            "category": [
-                "men",
-                "women",
-                "kids"
-            ],
+            "category": "men",
             "sub_category": "Home Appliances",
             "size": [
                 "N/A"
@@ -41,10 +34,7 @@
             "description": "Powerful laptop with a dedicated graphics card and RGB keyboard. Perfect for gaming and productivity.",
             "price": 1099.99,
             "image": "https://via.placeholder.com/150x150.png?text=Gaming+Laptop",
-            "category": [
-                "men",
-                "kids"
-            ],
+            "category": "men",
             "sub_category": "Electronics",
             "size": [
                 "N/A"
@@ -57,11 +47,7 @@
             "description": "Compact and portable speaker with deep bass and clear treble, suitable for outdoor activities.",
             "price": 39.99,
             "image": "https://via.placeholder.com/150x150.png?text=Bluetooth+Speaker",
-            "category": [
-                "men",
-                "women",
-                "kids"
-            ],
+            "category": "men",
             "sub_category": "Electronics",
             "size": [
                 "N/A"
@@ -74,10 +60,7 @@
             "description": "Track your fitness, heart rate, and stay connected with notifications on your wrist.",
             "price": 149.99,
             "image": "https://via.placeholder.com/150x150.png?text=Smartwatch",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "men",
             "sub_category": "Wearables",
             "size": [
                 "Small",
@@ -91,11 +74,7 @@
             "description": "Capture every moment in stunning 4K quality, even in extreme conditions.",
             "price": 199.99,
             "image": "https://via.placeholder.com/150x150.png?text=Action+Camera",
-            "category": [
-                "men",
-                "women",
-                "kids"
-            ],
+            "category": "men",
             "sub_category": "Cameras",
             "size": [
                 "N/A"
@@ -108,10 +87,7 @@
             "description": "Adjustable standing desk with programmable height settings to improve posture and productivity.",
             "price": 299.99,
             "image": "https://via.placeholder.com/150x150.png?text=Standing+Desk",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "women",
             "sub_category": "Furniture",
             "size": [
                 "Medium",
@@ -125,10 +101,7 @@
             "description": "Comfortable, adjustable chair with lumbar support, ideal for long hours at the desk.",
             "price": 189.99,
             "image": "https://via.placeholder.com/150x150.png?text=Office+Chair",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "women",
             "sub_category": "Furniture",
             "size": [
                 "Medium",
@@ -142,10 +115,7 @@
             "description": "In-ear wireless earbuds with active noise cancellation and long battery life.",
             "price": 89.99,
             "image": "https://via.placeholder.com/150x150.png?text=Earbuds",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "women",
             "sub_category": "Wearables",
             "size": [
                 "Small",
@@ -159,10 +129,7 @@
             "description": "Flexible tripod for smartphones, great for photography and video recording.",
             "price": 24.99,
             "image": "https://via.placeholder.com/150x150.png?text=Smartphone+Tripod",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "kids",
             "sub_category": "Accessories",
             "size": [
                 "N/A"
@@ -175,11 +142,7 @@
             "description": "Mini HD projector for movies, presentations, and gaming, easily portable.",
             "price": 219.99,
             "image": "https://via.placeholder.com/150x150.png?text=Projector",
-            "category": [
-                "men",
-                "women",
-                "kids"
-            ],
+            "category": "kids",
             "sub_category": "Home Appliances",
             "size": [
                 "N/A"
@@ -192,9 +155,7 @@
             "description": "Fast-boil electric kettle with automatic shutoff and temperature control.",
             "price": 49.99,
             "image": "https://via.placeholder.com/150x150.png?text=Electric+Kettle",
-            "category": [
-                "women"
-            ],
+            "category": "women",
             "sub_category": "Home Appliances",
             "size": [
                 "N/A"
@@ -207,10 +168,7 @@
             "description": "Track your steps, calories, and monitor your sleep with this waterproof fitness band.",
             "price": 69.99,
             "image": "https://via.placeholder.com/150x150.png?text=Fitness+Tracker",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "men",
             "sub_category": "Wearables",
             "size": [
                 "Small",
@@ -225,10 +183,7 @@
             "description": "One-touch coffee machine that brews your favorite coffee in under a minute.",
             "price": 99.99,
             "image": "https://via.placeholder.com/150x150.png?text=Coffee+Maker",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "men",
             "sub_category": "Home Appliances",
             "size": [
                 "N/A"
@@ -241,10 +196,7 @@
             "description": "HEPA filter air purifier to remove dust, allergens, and odors from your living space.",
             "price": 129.99,
             "image": "https://via.placeholder.com/150x150.png?text=Air+Purifier",
-            "category": [
-                "women",
-                "kids"
-            ],
+            "category": "kids",
             "sub_category": "Home Appliances",
             "size": [
                 "N/A"
@@ -257,10 +209,7 @@
             "description": "Fast wireless charging pad for all Qi-compatible devices, including smartphones and earbuds.",
             "price": 29.99,
             "image": "https://via.placeholder.com/150x150.png?text=Wireless+Charger",
-            "category": [
-                "men",
-                "women"
-            ],
+            "category": "women",
             "sub_category": "Accessories",
             "size": [
                 "N/A"
@@ -273,9 +222,7 @@
             "description": "Perfect lighting solution for video calls, selfies, and makeup tutorials.",
             "price": 34.99,
             "image": "https://via.placeholder.com/150x150.png?text=Ring+Light",
-            "category": [
-                "women"
-            ],
+            "category": "women",
             "sub_category": "Accessories",
             "size": [
                 "N/A"
@@ -288,11 +235,7 @@
             "description": "Wi-Fi-enabled security camera with motion detection and night vision.",
             "price": 79.99,
             "image": "https://via.placeholder.com/150x150.png?text=Security+Camera",
-            "category": [
-                "men",
-                "women",
-                "kids"
-            ],
+            "category": "kids",
             "sub_category": "Home Appliances",
             "size": [
                 "N/A"
