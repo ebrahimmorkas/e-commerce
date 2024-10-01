@@ -39,20 +39,21 @@ const ShopContextProvider = (props) => {
         console.log(`filters: ${filters}`)
         if(products.length > 0) {
             // Data has been fetched
-            console.log("Data present")
+            // console.log("Data present")
 
+            // In the below line logic is: If the filters array state length is zero then return all the products and if it nopt zero then check whether the category of the product is present or not in the filters array and is it is present then return that product.
             const selectedCategoryProducts = filters.length === 0 ? products : products.filter(product => filters.includes(product.category))
             // const selectedCategoryProducts = filters.length == 0 ? console.log('Zero') : console.log('Not')
-            console.log(selectedCategoryProducts)
+            // console.log(selectedCategoryProducts)
             setFilteredProducts(selectedCategoryProducts)
             // console.log(products)
         }
     }, [filters, products])
 
-    useEffect(() => {console.log(filteredProducts)}, [filteredProducts])
+    // useEffect(() => {console.log(filteredProducts)}, [filteredProducts])
 
 return (
-    <ShopContext.Provider value={{filters, updateFilters}}>
+    <ShopContext.Provider value={{filters, updateFilters, filteredProducts}}>
         {props.children}
     </ShopContext.Provider>
 )
