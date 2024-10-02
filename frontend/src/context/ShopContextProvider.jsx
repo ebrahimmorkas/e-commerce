@@ -53,7 +53,7 @@ const ShopContextProvider = (props) => {
     // useEffect(() => {console.log(filteredProducts)}, [filteredProducts])
 
 return (
-    <ShopContext.Provider value={{filters, updateFilters, filteredProducts}}>
+    <ShopContext.Provider value={{filters, updateFilters, filteredProducts, products}}>
         {props.children}
     </ShopContext.Provider>
 )
