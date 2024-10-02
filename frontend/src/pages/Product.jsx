@@ -3,12 +3,35 @@ import herocomponentimage from '../assets/images/herocomponentimage.png'; // Add
 import ShopContext from '../context/ShopContext'
 import { useParams } from 'react-router-dom';
 import Spinner from '../components/Spinner';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Product = () => {
   const { productID } = useParams();
-  const { products } = useContext(ShopContext);
+  const { products, updateCartProducts } = useContext(ShopContext);
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true)
+  const [size, setSize] = useState(null)
+
+  const setProductSize = (sizeValue) => {
+    console.log(sizeValue)
+    setSize(sizeValue)
+  }
+
+  const addToCart = () => {
+    if(size) {
+      // Size state is null
+      console.log("State is set")
+      setSize(null)
+      updateCartProducts(product)
+      toast("Added to cart")
+    }
+    else {
+      // Size state is set
+      console.log("State is not set")
+      toast("Select the size")
+    }
+  }
 
   useEffect(() => {
     if (products.length > 0) {
@@ -47,12 +70,12 @@ const Product = () => {
               <p className="text-gray-700 my-10">{product.description}</p>
               <p className="text-2xl font-bold">{`$ ${product.price}`}</p>
               <div className="flex space-x-2 container my-10">
-                <button className="border border-gray-300 px-4 py-2 w-[100px]">S</button>
-                <button className="border border-gray-300 px-4 py-2 w-[100px]">M</button>
-                <button className="border border-gray-300 px-4 py-2 w-[100px]">L</button>
-                <button className="border border-gray-300 px-4 py-2 w-[100px]">XL</button>
+                <button onClick={(event) => {setProductSize(event.target.textContent)}} className="border border-gray-300 px-4 py-2 w-[100px]">S</button>
+                <button onClick={(event) => {setProductSize(event.target.textContent)}} className="border border-gray-300 px-4 py-2 w-[100px]">M</button>
+                <button onClick={(event) => {setProductSize(event.target.textContent)}} className="border border-gray-300 px-4 py-2 w-[100px]">L</button>
+                <button onClick={(event) => {setProductSize(event.target.textContent)}} className="border border-gray-300 px-4 py-2 w-[100px]">XL</button>
               </div>
-              <button className="bg-black text-white px-4 py-2 w-[420px] rounded-md">Add to Cart</button>
+              <button onClick={addToCart} className="bg-black text-white px-4 py-2 w-[420px] rounded-md">Add to Cart</button>
             </div>
           </>
         ) : (

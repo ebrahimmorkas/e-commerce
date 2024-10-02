@@ -5,6 +5,13 @@ const ShopContextProvider = (props) => {
     const [filters, setFilters] = useState([])
     const [products, setProducts] = useState([])
     const [filteredProducts, setFilteredProducts] = useState([])
+    const [cartProducts, setCartProducts] = useState([])
+
+    const updateCartProducts = (product) => {
+        // Logic to add products in cart
+        console.log("Add to cart")
+        setCartProducts([product])
+    }
 
     // This useEffect has been written to fetch the data
     useEffect(() => {
@@ -53,7 +60,7 @@ const ShopContextProvider = (props) => {
     // useEffect(() => {console.log(filteredProducts)}, [filteredProducts])
 
 return (
-    <ShopContext.Provider value={{filters, updateFilters, filteredProducts, products}}>
+    <ShopContext.Provider value={{filters, updateFilters, filteredProducts, products, cartProducts, updateCartProducts}}>
         {props.children}
     </ShopContext.Provider>
 )
