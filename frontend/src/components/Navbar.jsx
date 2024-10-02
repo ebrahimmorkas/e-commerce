@@ -1,12 +1,16 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { FaUserCircle, FaSearch, FaShoppingCart } from 'react-icons/fa';
+import SearchContext from '../context/SearchContext';
+import SearchBar from './SearchBar.jsx'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const dropdownRef = useRef(null);
+
+  const {isSearchVisible, toggleSearchBar} = useContext(SearchContext)
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -77,7 +81,12 @@ const Navbar = () => {
 
           {/* DESKTOP PROFILE, SEARCH & CART ICONS */}
           <div className="hidden lg:flex space-x-6 items-center">
+            <button onClick={() => {
+              console.log("Button clicked")
+              toggleSearchBar()
+            }} className="focus:outline-none">
             <FaSearch className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
+            </button>
             <Link to='/cart'>
               <FaShoppingCart className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
             </Link>
@@ -127,7 +136,11 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+            <button onClick={() => {
+              toggleSearchBar()
+            }} className="focus:outline-none">
             <FaSearch className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
+            </button>
             <Link to='/cart'>
               <FaShoppingCart className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
             </Link>

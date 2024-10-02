@@ -12,11 +12,13 @@ import Login from './pages/Login'
 import NavbarLayout from './layouts/NavbarLayout'
 import Products from './pages/Products'
 import ShopContextProvider from './context/ShopContextProvider'
+import SearchContextProvider from './context/SearchContextProvider'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <SearchContextProvider>
     <ShopContextProvider>
       <Routes>
         <Route path='/' element={<NavbarLayout />}>
@@ -32,6 +34,7 @@ function App() {
         </Route>
       </Routes>
     </ShopContextProvider>
+    </SearchContextProvider>
     </BrowserRouter>
   )
 }
