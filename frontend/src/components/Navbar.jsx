@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { FaUserCircle, FaSearch, FaShoppingCart } from 'react-icons/fa';
 import SearchContext from '../context/SearchContext';
 import SearchBar from './SearchBar.jsx'
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const dropdownRef = useRef(null);
+  const location = useLocation();
 
   const {isSearchVisible, toggleSearchBar} = useContext(SearchContext)
 
@@ -85,7 +86,8 @@ const Navbar = () => {
               console.log("Button clicked")
               toggleSearchBar()
             }} className="focus:outline-none">
-            <FaSearch className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
+              {location.pathname == '/products' || location.pathname == '/cart' ? (<FaSearch className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />) : false}
+            
             </button>
             <Link to='/cart'>
               <FaShoppingCart className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
@@ -139,7 +141,7 @@ const Navbar = () => {
             <button onClick={() => {
               toggleSearchBar()
             }} className="focus:outline-none">
-            <FaSearch className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
+            {location.pathname == '/products' || location.pathname == '/cart' ? (<FaSearch className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />) : false}
             </button>
             <Link to='/cart'>
               <FaShoppingCart className="text-gray-700 w-6 h-6 cursor-pointer hover:text-blue-500" />
@@ -176,7 +178,7 @@ const Navbar = () => {
             <NavLink to="/" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)} onClick={toggleMenu}>
               Home
             </NavLink>
-            <NavLink to="/shop" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)} onClick={toggleMenu}>
+            <NavLink to="/products" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)} onClick={toggleMenu}>
               Shop
             </NavLink>
             <NavLink to="/about" className={({ isActive }) => (isActive ? activeLinkStyle : normalLinkStyle)} onClick={toggleMenu}>
