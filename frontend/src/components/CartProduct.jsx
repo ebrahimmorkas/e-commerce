@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CartProduct = () => {
+const CartProduct = ({ name }) => {
   return (
     <div className='container flex items-center justify-between bg-white shadow-2xl rounded-lg p-4 mt-8 mb-4 h-[200px]'>
       
@@ -16,7 +16,7 @@ const CartProduct = () => {
       {/* Product Details */}
       <div className="flex w-[60%] flex-col justify-between px-4">
         {/* Product title */}
-        <div className="text-xl font-bold text-gray-800">Sample Product</div>
+        <div className="text-xl font-bold text-gray-800">{name}</div>
 
         {/* Product details (size and quantity) */}
         <div className="flex items-center space-x-4 mt-2">

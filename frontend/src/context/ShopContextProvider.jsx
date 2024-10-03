@@ -10,7 +10,7 @@ const ShopContextProvider = (props) => {
     const updateCartProducts = (product) => {
         // Logic to add products in cart
         console.log("Add to cart")
-        setCartProducts([product])
+        setCartProducts([...cartProducts, product])
     }
 
     // This useEffect has been written to fetch the data
