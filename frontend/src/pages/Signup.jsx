@@ -1,10 +1,10 @@
 import React from 'react'
-import Form from '../components/Form'
+import Form from'../components/Form'
 
-const Login = () => {
+const Signup = () => {
   return (
     <div className='bg-blue-50'><Form /></div>
   )
 }
 
-export default Login
+export default Signup

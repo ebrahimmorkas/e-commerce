@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 const Product = () => {
   const { productID } = useParams();
-  const { products, updateCartProducts } = useContext(ShopContext);
+  const { products, updateCartProducts, updateButtonText } = useContext(ShopContext);
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true)
   const [size, setSize] = useState(null)
@@ -24,6 +24,7 @@ const Product = () => {
       console.log("State is set")
       setSize(null)
       updateCartProducts(product)
+      updateButtonText(product)
       toast("Added to cart")
     }
     else {
@@ -75,7 +76,7 @@ const Product = () => {
                 <button onClick={(event) => {setProductSize(event.target.textContent)}} className="border border-gray-300 px-4 py-2 w-[100px]">L</button>
                 <button onClick={(event) => {setProductSize(event.target.textContent)}} className="border border-gray-300 px-4 py-2 w-[100px]">XL</button>
               </div>
-              <button onClick={addToCart} className="bg-black text-white px-4 py-2 w-[420px] rounded-md">Add to Cart</button>
+              <button onClick={addToCart} className="bg-black text-white px-4 py-2 w-[420px] rounded-md">{product.is_added_to_cart ? "Remove from cart" : "Add to cart"}</button>
             </div>
           </>
         ) : (

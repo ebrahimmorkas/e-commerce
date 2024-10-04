@@ -13,7 +13,8 @@
                 "Medium",
                 "Large"
             ],
-            "date_of_publish": "2024-08-01"
+            "date_of_publish": "2024-08-01",
+            "is_added_to_cart": false
         },
         {
             "id": 2,
@@ -26,7 +27,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-07-15"
+            "date_of_publish": "2024-07-15",
+            "is_added_to_cart": false
         },
         {
             "id": 3,
@@ -39,7 +41,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-06-20"
+            "date_of_publish": "2024-06-20",
+            "is_added_to_cart": false
         },
         {
             "id": 4,
@@ -52,7 +55,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-08-12"
+            "date_of_publish": "2024-08-12",
+            "is_added_to_cart": false
         },
         {
             "id": 5,
@@ -66,7 +70,8 @@
                 "Small",
                 "Medium"
             ],
-            "date_of_publish": "2024-09-01"
+            "date_of_publish": "2024-09-01",
+            "is_added_to_cart": false
         },
         {
             "id": 6,
@@ -79,7 +84,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-07-10"
+            "date_of_publish": "2024-07-10",
+            "is_added_to_cart": false
         },
         {
             "id": 7,
@@ -93,7 +99,8 @@
                 "Medium",
                 "Large"
             ],
-            "date_of_publish": "2024-08-22"
+            "date_of_publish": "2024-08-22",
+            "is_added_to_cart": false
         },
         {
             "id": 8,
@@ -107,7 +114,8 @@
                 "Medium",
                 "Large"
             ],
-            "date_of_publish": "2024-09-10"
+            "date_of_publish": "2024-09-10",
+            "is_added_to_cart": false
         },
         {
             "id": 9,
@@ -121,7 +129,8 @@
                 "Small",
                 "Medium"
             ],
-            "date_of_publish": "2024-07-05"
+            "date_of_publish": "2024-07-05",
+            "is_added_to_cart": false
         },
         {
             "id": 10,
@@ -134,7 +143,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-06-30"
+            "date_of_publish": "2024-06-30",
+            "is_added_to_cart": false
         },
         {
             "id": 11,
@@ -147,7 +157,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-08-01"
+            "date_of_publish": "2024-08-01",
+            "is_added_to_cart": false
         },
         {
             "id": 12,
@@ -160,7 +171,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-08-05"
+            "date_of_publish": "2024-08-05",
+            "is_added_to_cart": false
         },
         {
             "id": 13,
@@ -175,7 +187,8 @@
                 "Medium",
                 "Large"
             ],
-            "date_of_publish": "2024-07-20"
+            "date_of_publish": "2024-07-20",
+            "is_added_to_cart": false
         },
         {
             "id": 14,
@@ -188,7 +201,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-06-18"
+            "date_of_publish": "2024-06-18",
+            "is_added_to_cart": false
         },
         {
             "id": 15,
@@ -201,7 +215,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-08-25"
+            "date_of_publish": "2024-08-25",
+            "is_added_to_cart": false
         },
         {
             "id": 16,
@@ -214,7 +229,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-09-01"
+            "date_of_publish": "2024-09-01",
+            "is_added_to_cart": false
         },
         {
             "id": 17,
@@ -227,7 +243,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-09-12"
+            "date_of_publish": "2024-09-12",
+            "is_added_to_cart": false
         },
         {
             "id": 18,
@@ -240,7 +257,8 @@
             "size": [
                 "N/A"
             ],
-            "date_of_publish": "2024-08-18"
+            "date_of_publish": "2024-08-18",
+            "is_added_to_cart": false
         }
     ]
 }

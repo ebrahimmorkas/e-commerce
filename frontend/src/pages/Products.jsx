@@ -46,7 +46,8 @@ const Products = () => {
             image={product.image}
             category={product.category}
             size={product.size}
-            date_of_publish={product.date_of_publish} />
+            date_of_publish={product.date_of_publish}
+            is_added_to_cart={product.is_added_to_cart} />
           )): <ClipLoader />}
       </div>
       </div>

@@ -13,6 +13,14 @@ const ShopContextProvider = (props) => {
         setCartProducts([...cartProducts, product])
     }
 
+    const updateButtonText = (product) => {
+        console.log("In function")
+        console.log(product.id)
+        // prod = cartProducts.find(p => p.id == '1')
+        // prod.is_added_to_cart = true
+        // console.log(product.is_added_to_cart)
+    }
+
     // This useEffect has been written to fetch the data
     useEffect(() => {
         const fetchProducts = async () => {
@@ -60,7 +68,7 @@ const ShopContextProvider = (props) => {
     // useEffect(() => {console.log(filteredProducts)}, [filteredProducts])
 
 return (
-    <ShopContext.Provider value={{filters, updateFilters, filteredProducts, products, cartProducts, updateCartProducts}}>
+    <ShopContext.Provider value={{filters, updateFilters, filteredProducts, products, cartProducts, updateCartProducts, updateButtonText}}>
         {props.children}
     </ShopContext.Provider>
 )
